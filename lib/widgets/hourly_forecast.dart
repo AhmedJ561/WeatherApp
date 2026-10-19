@@ -32,9 +32,7 @@ class HourlyForecast extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Text(
-                  "${(double.parse(temperature) - 273.15).abs().toStringAsFixed(2)} C",
-                  maxLines: 1),
+              Text('$temperature °C', maxLines: 1),
             ],
           ),
         ),
